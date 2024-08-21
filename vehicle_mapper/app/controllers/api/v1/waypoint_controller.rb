@@ -6,20 +6,14 @@ class Api::V1::WaypointController < ApplicationController
   end
 
   def create
-    @waypoint_data = waypoint_params
-    @vehicle = check_vehicle(params[:vehicle_identifier])
-    @dwaypoint = Waypoint.new(
-      latitude: waypoint_params[:latitude],
-      longitude: waypoint_params[:longitude],
-      vehicles_id: @vehicle[:id],
-      sent_at: waypoint_params[:sent_at]
+    AddGpsJob.perform_async(
+      params[:vehicle_identifier], 
+      waypoint_params[:latitude],
+      waypoint_params[:longitude],
+      waypoint_params[:sent_at]
     )
-    
-    if @dwaypoint.save
-      render json: @waypoints, status: :created
-    else
-      render json: { error: "Cannot create waypoint" }, status: 400
-    end
+
+    render json: {}, status: :ok
   end
 
   def show
@@ -42,17 +36,6 @@ class Api::V1::WaypointController < ApplicationController
   end
 
   private
-
-  def check_vehicle(vehicle)
-    @vehicle = Vehicle.find_by(plate: vehicle)
-    if @vehicle
-      return @vehicle
-    else
-      @vehicle = Vehicle.new(plate: vehicle)
-      @vehicle.save
-    end
-    return @vehicle
-  end
 
   def waypoint_params
     params.require(:waypoint).permit(:latitude, :longitude, :sent_at)
