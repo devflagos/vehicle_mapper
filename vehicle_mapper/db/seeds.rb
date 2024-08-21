@@ -1,9 +1,65 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+Vehicle.create!([{
+  plate: "AAAA-00",
+}, {
+  plate: "BBBB-11",
+},{
+  plate: "CCCC-22",
+},{
+  plate: "DDDD-33",
+},{
+  plate: "EEEE-44",
+},{
+  plate: "FFFF-55",
+},{
+  plate: "GGGG-66",
+},{
+  plate: "HHHH-77",
+}])
+
+Waypoint.create!([{
+  latitude: "-33.4539",
+  longitude: "-70.6039",
+  sent_at: "",
+  vehicles_id: 1
+},{
+  latitude: "-33.4350",	
+  longitude: "-70.6158",
+  sent_at: "2024-01-01 00:10:00",
+  vehicles_id: 2
+},{
+  latitude: "-34.1619",	
+  longitude: "-70.7408",
+  sent_at: "2024-01-01 00:20:00",
+  vehicles_id: 8
+},{
+  latitude: "-33.4372",	
+  longitude: "-70.6572",
+  sent_at: "2024-01-01 00:30:00",
+  vehicles_id: 3
+},{
+  latitude: "-33.5000",	
+  longitude: "-70.7167",
+  sent_at: "2024-01-01 00:40:00",
+  vehicles_id: 4
+},{
+  latitude: "-33.4219",	
+  longitude: "-70.7350",
+  sent_at: "2024-01-01 00:50:00",
+  vehicles_id: 5
+},{
+  latitude: "-33.5669",	
+  longitude: "-70.6750",
+  sent_at: "2024-01-01 01:00:00",
+  vehicles_id: 5
+},{
+  latitude: "-33.4589",	
+  longitude: "-70.6989",
+  sent_at: "2024-01-01 03:00:00",
+  vehicles_id: 6
+},{
+  latitude: "-33.3678",	
+  longitude: "-70.6339",
+  sent_at: "2024-01-01 04:00:00",
+  vehicles_id: 7
+}
+]);
