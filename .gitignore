@@ -11,7 +11,7 @@ vehicle_mapper/test/version_tmp/
 vehicle_mapper/tmp/**/**
 
 # Used by dotenv library to load environment variables.
-# .env
+vehicle_mapper/.env
 
 # Ignore Byebug command history file.
 vehicle_mapper/.byebug_history
@@ -20,12 +20,6 @@ vehicle_mapper/.byebug_history
 vehicle_mapper/.bundle/
 vehicle_mapper/vendor/bundle
 vehicle_mapper/lib/bundler/man/
-
-# for a library or gem, you might want to ignore these files since the code is
-# intended to run in multiple environments; otherwise, check them in:
-# Gemfile.lock
-# .ruby-version
-# .ruby-gemset
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 vehicle_mapper/.rvmrc

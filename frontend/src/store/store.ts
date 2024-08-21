@@ -1,32 +1,34 @@
 import { Middleware, Tuple, configureStore, isAction } from "@reduxjs/toolkit";
-import postReducer, { addPost, deletePostById } from "./posts/slice";
+import vehicleReducer, { addVehicle, deleteVehicleById } from "./vehicles/slice";
 
 const syncWithApiMiddleware: Middleware = (api) => (next) => (action) => {
 
-    if (isAction(action) && addPost.match(action)) {
+    if (isAction(action) && addVehicle.match(action)) {
 
-        fetch(`${import.meta.env.VITE_API_ROUTE}`, {
+        const url = `${import.meta.env.VITE_API_ROUTE + '/vehicle'}`;
+        console.log(url);
+        fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({name: action.payload.name, details: action.payload.details})
+            body: JSON.stringify({plate: action.payload.plate})
         })
         .then((res) => res.json())
         .then((data) => {
             action.payload.id = data.id;
             next(action);
         })
-        .catch((err) => {throw new Error(`Error ${err.status}: Error creating post`)});
+        .catch((err) => {throw new Error(`Error ${err.status}: Error creating vehicle`)});
     }
-    else if (isAction(action) && deletePostById.match(action)) {
+    else if (isAction(action) && deleteVehicleById.match(action)) {
         next(action);
-        const postIdToRemove = action.payload
-        fetch(`${import.meta.env.VITE_API_ROUTE + postIdToRemove}`, {
+        const vehicleIdToRemove = action.payload
+        fetch(`${import.meta.env.VITE_API_ROUTE + vehicleIdToRemove}`, {
             method: 'DELETE'
         })
             .then(res => {
-                throw new Error(`Error ${res.status}: Error removing post`);
+                throw new Error(`Error ${res.status}: Error removing vehicle`);
             })
     }else{
         next(action);
@@ -36,7 +38,7 @@ const syncWithApiMiddleware: Middleware = (api) => (next) => (action) => {
 
 export const store = configureStore({
     reducer: {
-        posts: postReducer,
+        vehicles: vehicleReducer,
     },
     middleware: () => new Tuple(syncWithApiMiddleware),
 });

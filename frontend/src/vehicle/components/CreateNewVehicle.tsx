@@ -1,35 +1,34 @@
-import { usePostActions } from "../../hooks/usePostActions"
+import { useVehicleActions } from "../../hooks/useVehicleActions"
 
-export default function CreateNewPost() {
-    const { createPost } = usePostActions();
+export default function CreateNewVehicle() {
+    const { createVehicle } = useVehicleActions();
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
 
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form)
-        const name = formData.get('postName') as string;
-        const details = formData.get('postDetails') as string;
+        const plate = formData.get('vehicleName') as string;
 
-        createPost({ name: name, details: details, id: ""});
+        createVehicle({ plate: plate, waypoints: [], id: ""});
         form.reset();
     }
 
     return (
         <div>
-            <h2>Create Post</h2>
+            <h2>Create Vehicle</h2>
             <form onSubmit={handleSubmit}>
                 <p>
                     Name:
-                    <input type="text" name="postName" placeholder="Post 01" />
+                    <input type="text" name="vehicleName" placeholder="Vehicle 01" />
 
                 </p>
                 <p>
                     Details:
-                    <input type="text" name="postDetails" placeholder="Lorem Ipsum" />
+                    <input type="text" name="vehicleDetails" placeholder="Lorem Ipsum" />
 
                 </p>
                 <button type="submit" style={{ marginTop: "16px" }}>
-                    Create Post
+                    Create Vehicle
                 </button>
             </form>
         </div>

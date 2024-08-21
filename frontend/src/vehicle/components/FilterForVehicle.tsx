@@ -1,25 +1,25 @@
-import { usePostActions } from "../../hooks/usePostActions"
+import { useVehicleActions } from "../../hooks/useVehicleActions"
 
-export default function FilterForPosts() {
-    const { filteredPosts } = usePostActions();
+export default function FilterForVehicles() {
+    const { filteredVehicles } = useVehicleActions();
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
 
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form)
-        const name = formData.get('postName') as string;
+        const name = formData.get('vehicleName') as string;
 
-        filteredPosts(name);
+        filteredVehicles(name);
         form.reset();
     }
 
     return (
         <div>
-            <h2>Filter Post</h2>
+            <h2>Filter Vehicle</h2>
             <form onSubmit={handleSubmit}>
                 <p>
                     Name:
-                    <input type="text" name="postName" placeholder="Post 01" />
+                    <input type="text" name="vehicleName" placeholder="Vehicle 01" />
 
                 </p>
                 <button type="submit" style={{ marginTop: "16px" }}>

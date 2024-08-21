@@ -1,8 +1,16 @@
 class Api::V1::VehicleController < ApplicationController
   def index
-    @vehicles = Vehicle.all
+    @vehicles_with_data = []
+    @vehicles = Vehicle.all.each do |vehicle|
+      @waypoints = Waypoint.select(:id, :latitude, :longitude, :sent_at).where(vehicles_id: vehicle.id)
+      @vehicles_with_data.push({   
+          id: vehicle.id,
+          plate: vehicle.plate,
+          waypoints: @waypoints,
+      })
+    end
 
-    render json: @vehicles, status: :ok
+    render json: @vehicles_with_data, status: :ok
   end
 
   def create
@@ -19,7 +27,7 @@ class Api::V1::VehicleController < ApplicationController
     @vehicles = Vehicle.find_by(plate: params[:id])
     if @vehicles
       @waypoints = Waypoint.where(vehicles_id: @vehicles[:id])
-      @vehicle_data = {vehicle: @vehicles, waypoints: @waypoints ?? []}
+      @vehicle_data = { vehicle: @vehicles, waypoints: @waypoints || [] }
       render json: @vehicle_data, status: :ok
     else
       render json: { error: "No vehicle where found" }, status: :not_found

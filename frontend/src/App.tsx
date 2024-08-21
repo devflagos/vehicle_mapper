@@ -1,17 +1,13 @@
 import './App.css'
-import ListOfPosts from './post/components/ListOfPosts'
-import FilterForPosts from './post/components/FilterForPost'
-import CreateNewPost from './post/components/CreateNewPost'
+import ListOfVehicles from './vehicle/components/ListOfVehicles'
+import FilterForVehicles from './vehicle/components/FilterForVehicle'
+import CreateNewVehicle from './vehicle/components/CreateNewVehicle'
 
 function App() {
 
   return (
     <>
-      <FilterForPosts />
-      <hr />
-      <ListOfPosts />
-      <hr />
-      <CreateNewPost />
+      <ListOfVehicles />
     </>
   )
 }
