@@ -5,26 +5,26 @@ default: &default
 
 development:
   <<: *default
-  database: vehicle_mapper
-  username: vehicle_supervisor
-  password: ds20g9yB76_l
+  database: <%= ENV["DB_NAME"] %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   host: localhost
   port: 5432
 
 test:
   <<: *default
-  database: vehicle_mapper
-  username: vehicle_supervisor
-  password: ds20g9yB76_l
+  database: <%= ENV["DB_NAME"] %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   host: localhost
   port: 5432
 
 
 production:
   <<: *default
-  database: vehicle_mapper
-  username: vehicle_supervisor
-  password: ds20g9yB76_l
+  database: <%= ENV["DB_NAME"] %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   host: localhost
   port: 5432
 

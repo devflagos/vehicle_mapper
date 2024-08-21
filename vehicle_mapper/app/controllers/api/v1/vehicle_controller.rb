@@ -1,8 +1,13 @@
 class Api::V1::VehicleController < ApplicationController
   def index
+    logger.info ENV["MAX_WAYPOINTS_COUNT"]
     @vehicles_with_data = []
     @vehicles = Vehicle.all.each do |vehicle|
-      @waypoints = Waypoint.select(:id, :latitude, :longitude, :sent_at).where(vehicles_id: vehicle.id)
+      @waypoints = Waypoint
+      .select(:id, :latitude, :longitude, :sent_at)
+      .where(vehicles_id: vehicle.id)
+      .order(sent_at: :desc)
+      .limit(ENV["MAX_WAYPOINTS_COUNT"])
       @vehicles_with_data.push({   
           id: vehicle.id,
           plate: vehicle.plate,
