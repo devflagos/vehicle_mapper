@@ -12,6 +12,7 @@ vehicle_mapper/tmp/**/**
 
 # Used by dotenv library to load environment variables.
 vehicle_mapper/.env
+frontend/.env
 
 # Ignore Byebug command history file.
 vehicle_mapper/.byebug_history
