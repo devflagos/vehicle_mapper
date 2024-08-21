@@ -23,6 +23,10 @@ In order to run the application, you need to install the following dependencies
 
 in /API/config/database.yml you will need to configure the database variables for your database instance
 
+# Settings
+
+Please consider to create and edit an .env file based on your own routes for db and redis in order to let the application work 
+
 # API
 
 To start the API, open a terminal in API directory and run the following command
