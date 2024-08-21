@@ -2487,3 +2487,1864 @@ Processing by Api::V1::VehicleController#index as */*
 Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:33:11 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:33:11 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:33:18 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:33:18 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:34:17 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:34:17 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:34:45 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:34:45 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:36:00 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:36:00 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.6ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:36:37 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:36:39 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:36:39 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:38:04 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:38:04 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:43:15 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:43:15 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:43:42 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:44:22 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.6ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:44:30 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:44:30 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:44:48 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.6ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:44:50 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:44:51 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:46:43 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 02:47:38 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>63.32, "longitude"=>-15.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"GHVV-11", "waypoint"=>{"latitude"=>63.32, "longitude"=>-15.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "GHVV-11"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:52:in `check_vehicle'
+  [1m[36mVehicle Create (2.1ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "GHVV-11"], ["created_at", "2024-08-21 06:47:38.958615"], ["updated_at", "2024-08-21 06:47:38.958615"]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:52:in `check_vehicle'
+  [1m[36mTRANSACTION (57.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:52:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (2.5ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "63.32"], ["longitude", "-15.56"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-21 06:47:39.022799"], ["updated_at", "2024-08-21 06:47:39.022799"], ["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 74ms (Views: 0.1ms | ActiveRecord: 62.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:47:41 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:47:41 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:48:45 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:48:45 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:50:25 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:50:29 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:50:29 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:50:58 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:51:01 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:51:01 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:57:51 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (72.7ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (2.6ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 89ms (Views: 8.0ms | ActiveRecord: 86.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:57:51 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:58:26 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:58:56 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:58:58 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:59:18 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:59:28 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:59:34 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:59:34 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 02:59:57 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.6ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 12ms (Views: 7.8ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:00:02 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:00:02 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:00:52 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:00:56 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:00:56 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:01:06 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:01:06 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.6ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:01:09 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:01:09 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.6ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.5ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 1.3ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:01:22 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:01:22 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:02:04 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:02:15 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:02:15 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.9ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:02:20 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:02:22 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:02:22 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:02:23 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 03:02:23 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:13:in `index'
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 03:09:17 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>64.32, "longitude"=>-14.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"GHVV-11", "waypoint"=>{"latitude"=>64.32, "longitude"=>-14.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.9ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "GHVV-11"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (2.6ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "64.32"], ["longitude", "-14.56"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-21 07:09:17.895020"], ["updated_at", "2024-08-21 07:09:17.895020"], ["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 14ms (Views: 0.1ms | ActiveRecord: 8.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 03:09:27 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>64.5, "longitude"=>-14.6, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"GHVV-11", "waypoint"=>{"latitude"=>64.5, "longitude"=>-14.6, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "GHVV-11"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (2.6ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "64.5"], ["longitude", "-14.6"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-21 07:09:27.244378"], ["updated_at", "2024-08-21 07:09:27.244378"], ["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 8ms (Views: 0.1ms | ActiveRecord: 3.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 03:09:33 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>62.5, "longitude"=>-13.6, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"GHVV-11", "waypoint"=>{"latitude"=>62.5, "longitude"=>-13.6, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "GHVV-11"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (2.0ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "62.5"], ["longitude", "-13.6"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-21 07:09:33.168535"], ["updated_at", "2024-08-21 07:09:33.168535"], ["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 8ms (Views: 0.1ms | ActiveRecord: 2.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 03:09:34 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>62.5, "longitude"=>-14.6, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"GHVV-11", "waypoint"=>{"latitude"=>62.5, "longitude"=>-14.6, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "GHVV-11"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (2.0ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "62.5"], ["longitude", "-14.6"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-21 07:09:34.832825"], ["updated_at", "2024-08-21 07:09:34.832825"], ["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 10ms (Views: 0.1ms | ActiveRecord: 2.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 03:09:35 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>62.5, "longitude"=>-15.6, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"GHVV-11", "waypoint"=>{"latitude"=>62.5, "longitude"=>-15.6, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "GHVV-11"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (1.9ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "62.5"], ["longitude", "-15.6"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-21 07:09:35.812062"], ["updated_at", "2024-08-21 07:09:35.812062"], ["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 8ms (Views: 0.1ms | ActiveRecord: 2.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 03:09:36 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>62.5, "longitude"=>-16.6, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"GHVV-11", "waypoint"=>{"latitude"=>62.5, "longitude"=>-16.6, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "GHVV-11"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (1.9ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "62.5"], ["longitude", "-16.6"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-21 07:09:36.738614"], ["updated_at", "2024-08-21 07:09:36.738614"], ["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 8ms (Views: 0.1ms | ActiveRecord: 2.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 03:09:38 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>62.5, "longitude"=>-17.6, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"GHVV-11", "waypoint"=>{"latitude"=>62.5, "longitude"=>-17.6, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "GHVV-11"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (1.9ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "62.5"], ["longitude", "-17.6"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-21 07:09:38.074029"], ["updated_at", "2024-08-21 07:09:38.074029"], ["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 12ms (Views: 0.1ms | ActiveRecord: 2.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:09:44 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.8ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:17:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:17:in `index'
+Completed 200 OK in 23ms (Views: 15.4ms | ActiveRecord: 1.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:10:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (66.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:4:in `index'
+  [1m[36mWaypoint Load (0.9ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:17:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:17:in `index'
+Completed 200 OK in 118ms (Views: 8.3ms | ActiveRecord: 82.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:11:43 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 19ms (Views: 8.0ms | ActiveRecord: 4.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:12:57 -0400
+Processing by Api::V1::VehicleController#index as */*
+nil
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 19ms (Views: 7.2ms | ActiveRecord: 4.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:13:59 -0400
+Processing by Api::V1::VehicleController#index as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+KeyError (key not found: "MAX_WAYPOINTS_COUNT"):
+  
+app/controllers/api/v1/vehicle_controller.rb:3:in `fetch'
+app/controllers/api/v1/vehicle_controller.rb:3:in `index'
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:14:33 -0400
+Processing by Api::V1::VehicleController#index as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+KeyError (key not found: "MAX_WAYPOINTS_COUNT"):
+  
+app/controllers/api/v1/vehicle_controller.rb:3:in `fetch'
+app/controllers/api/v1/vehicle_controller.rb:3:in `index'
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:15:43 -0400
+Processing by Api::V1::VehicleController#index as */*
+nil
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC[0m  [["vehicles_id", 2]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 25ms (Views: 9.5ms | ActiveRecord: 5.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:21:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (66.9ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.8ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 116ms (Views: 7.4ms | ActiveRecord: 81.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:22:21 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."created_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."created_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 18ms (Views: 6.3ms | ActiveRecord: 4.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:22:55 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 31ms (Views: 7.4ms | ActiveRecord: 4.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:26:19 -0400
+  
+TypeError (no implicit conversion of Integer into String):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+)
+  
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:62:in `include?'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:62:in `rescue in new_client'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:982:in `connect'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:994:in `reconnect'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:662:in `block in reconnect!'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:661:in `reconnect!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:763:in `block in verify!'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:754:in `verify!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:771:in `connect!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:977:in `block in with_raw_connection'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:976:in `with_raw_connection'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1097:in `quoted_scope'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1074:in `data_source_sql'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.0) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:413:in `with_connection'
+activerecord (7.2.0) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.0) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.0) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.0) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.0) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.0) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.0) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.0) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.0) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.0) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.7) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.7) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (2.0.2) lib/rack/cors.rb:102:in `call'
+railties (7.2.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:28:51 -0400
+  
+TypeError (no implicit conversion of Integer into String):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+)
+  
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:62:in `include?'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:62:in `rescue in new_client'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:982:in `connect'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:994:in `reconnect'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:662:in `block in reconnect!'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:661:in `reconnect!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:763:in `block in verify!'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:754:in `verify!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:771:in `connect!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:977:in `block in with_raw_connection'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:976:in `with_raw_connection'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1097:in `quoted_scope'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1074:in `data_source_sql'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.0) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:413:in `with_connection'
+activerecord (7.2.0) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.0) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.0) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.0) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.0) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.0) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.0) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.0) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.0) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.0) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.7) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.7) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (2.0.2) lib/rack/cors.rb:102:in `call'
+railties (7.2.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:32:52 -0400
+  
+TypeError (no implicit conversion of Integer into String):
+
+Causes:
+PG::ConnectionBad (connection to server at "::1", port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+)
+  
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:62:in `include?'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:62:in `rescue in new_client'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:982:in `connect'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:994:in `reconnect'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:662:in `block in reconnect!'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:661:in `reconnect!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:763:in `block in verify!'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:754:in `verify!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:771:in `connect!'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:977:in `block in with_raw_connection'
+activesupport (7.2.0) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract_adapter.rb:976:in `with_raw_connection'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1097:in `quoted_scope'
+activerecord (7.2.0) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1074:in `data_source_sql'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (7.2.0) lib/active_record/schema_migration.rb:54:in `block in create_table'
+activerecord (7.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:413:in `with_connection'
+activerecord (7.2.0) lib/active_record/schema_migration.rb:53:in `create_table'
+activerecord (7.2.0) lib/active_record/migration.rb:1434:in `initialize'
+activerecord (7.2.0) lib/active_record/migration.rb:1282:in `new'
+activerecord (7.2.0) lib/active_record/migration.rb:1282:in `open'
+activerecord (7.2.0) lib/active_record/migration.rb:776:in `block (2 levels) in pending_migrations'
+activerecord (7.2.0) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (7.2.0) lib/active_record/migration.rb:775:in `block in pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:774:in `each'
+activerecord (7.2.0) lib/active_record/migration.rb:774:in `pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:753:in `check_pending_migrations'
+activerecord (7.2.0) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.0) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.0) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.0) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.0) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.7) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.7) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (2.0.2) lib/rack/cors.rb:102:in `call'
+railties (7.2.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:33:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (67.7ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (1.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 123ms (Views: 8.2ms | ActiveRecord: 84.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-21 03:34:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (67.7ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (1.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 119ms (Views: 7.8ms | ActiveRecord: 83.1ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 04:17:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>22.4, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>22.4, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 12025ms (ActiveRecord: 75.2ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+RedisClient::CannotConnectError (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. - user specified timeout (redis://localhost:6379)):
+
+Causes:
+Errno::ETIMEDOUT (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. - user specified timeout)
+  
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, and [36mMAX_WAYPOINTS_COUNT[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 05:58:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>22.4, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>22.4, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 77.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mVehicle Load (2.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-21 05:58:57 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>22.4, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"Holita", "waypoint"=>{"latitude"=>22.4, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "Holita"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/sidekiq/add_gps_job.rb:24:in `check_vehicle'
+  [1m[36mVehicle Create (3.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "Holita"], ["created_at", "2024-08-21 09:58:57.868748"], ["updated_at", "2024-08-21 09:58:57.868748"]]
+  ↳ app/sidekiq/add_gps_job.rb:24:in `check_vehicle'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/sidekiq/add_gps_job.rb:24:in `check_vehicle'
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "Holita"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "Holita"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "Holita"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "Holita"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:03:25 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (3.8ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (2.0ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 86ms (Views: 14.0ms | ActiveRecord: 16.1ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:03:25 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, [36mMAX_WAYPOINTS_COUNT[0m, and [36mREDIS_HOST_SERVER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mVehicle Load (0.9ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "Holita"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "Holita"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:26:21 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (81.7ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.9ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 93ms (Views: 6.8ms | ActiveRecord: 88.1ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:26:21 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 1.2ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:27:19 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:28:45 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:29:29 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 1.2ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:29:44 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:29:47 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 1.4ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:29:47 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.6ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 41ms (Views: 14.3ms | ActiveRecord: 1.7ms (4 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:30:39 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:30:42 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:30:42 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.9ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:31:52 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:31:56 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:31:56 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:32:41 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:32:43 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 1.1ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:32:43 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 1.2ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:32:48 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:32:50 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 1.0ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:32:50 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 16ms (Views: 10.7ms | ActiveRecord: 1.3ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:33:35 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:33:35 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.4ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 32ms (Views: 22.5ms | ActiveRecord: 1.7ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mVehicle Load (0.9ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "Holita"], ["LIMIT", 1]]
+  ↳ app/sidekiq/add_gps_job.rb:19:in `check_vehicle'
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, [36mMAX_WAYPOINTS_COUNT[0m, and [36mREDIS_HOST_SERVER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (5.5ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "AAAA-00"], ["created_at", "2024-08-21 10:48:05.834677"], ["updated_at", "2024-08-21 10:48:05.834677"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (6.6ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "BBBB-11"], ["created_at", "2024-08-21 10:48:05.857767"], ["updated_at", "2024-08-21 10:48:05.857767"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "CCCC-22"], ["created_at", "2024-08-21 10:48:05.869515"], ["updated_at", "2024-08-21 10:48:05.869515"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.2ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "DDDD-33"], ["created_at", "2024-08-21 10:48:05.875882"], ["updated_at", "2024-08-21 10:48:05.875882"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (3.1ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "EEEE-44"], ["created_at", "2024-08-21 10:48:05.882023"], ["updated_at", "2024-08-21 10:48:05.882023"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.2ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "FFFF-55"], ["created_at", "2024-08-21 10:48:05.888621"], ["updated_at", "2024-08-21 10:48:05.888621"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "GGGG-66"], ["created_at", "2024-08-21 10:48:05.894349"], ["updated_at", "2024-08-21 10:48:05.894349"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.2ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "HHHH-77"], ["created_at", "2024-08-21 10:48:05.900274"], ["updated_at", "2024-08-21 10:48:05.900274"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (3.4ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4539"], ["longitude", "-70.6039"], ["sent_at", nil], ["created_at", "2024-08-21 10:48:05.911755"], ["updated_at", "2024-08-21 10:48:05.911755"], ["vehicles_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, [36mMAX_WAYPOINTS_COUNT[0m, and [36mREDIS_HOST_SERVER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (4.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "AAAA-00"], ["created_at", "2024-08-21 10:49:18.949367"], ["updated_at", "2024-08-21 10:49:18.949367"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, [36mMAX_WAYPOINTS_COUNT[0m, and [36mREDIS_HOST_SERVER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (243.7ms)[0m  [1m[35mCREATE DATABASE "vehicle_mapper" ENCODING = 'unicode'[0m
+  [1m[35m (54.6ms)[0m  [1m[35mCREATE DATABASE "vehicle_mapper" ENCODING = 'unicode'[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, [36mMAX_WAYPOINTS_COUNT[0m, and [36mREDIS_HOST_SERVER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5009937961787321115)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-08-21 10:50:33.508256', '2024-08-21 10:50:33.508259') RETURNING "key"[0m
+Migrating to CreateVehicles (20240818152813)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "vehicles" ("id" bigserial primary key, "plate" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_vehicles_on_plate" ON "vehicles" ("plate")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240818152813') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWaypoints (20240818152825)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "waypoints" ("id" bigserial primary key, "latitude" character varying, "longitude" character varying, "sent_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "vehicles_id" bigint, CONSTRAINT "fk_rails_1968037f30"
+FOREIGN KEY ("vehicles_id")
+  REFERENCES "vehicles" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_waypoints_on_vehicles_id" ON "waypoints" ("vehicles_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240818152825') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5009937961787321115)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, [36mMAX_WAYPOINTS_COUNT[0m, and [36mREDIS_HOST_SERVER[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (8.6ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "AAAA-00"], ["created_at", "2024-08-21 10:50:39.818932"], ["updated_at", "2024-08-21 10:50:39.818932"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "BBBB-11"], ["created_at", "2024-08-21 10:50:39.842020"], ["updated_at", "2024-08-21 10:50:39.842020"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "CCCC-22"], ["created_at", "2024-08-21 10:50:39.848122"], ["updated_at", "2024-08-21 10:50:39.848122"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (3.1ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "DDDD-33"], ["created_at", "2024-08-21 10:50:39.854401"], ["updated_at", "2024-08-21 10:50:39.854401"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.2ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "EEEE-44"], ["created_at", "2024-08-21 10:50:39.861428"], ["updated_at", "2024-08-21 10:50:39.861428"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.2ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "FFFF-55"], ["created_at", "2024-08-21 10:50:39.867279"], ["updated_at", "2024-08-21 10:50:39.867279"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "GGGG-66"], ["created_at", "2024-08-21 10:50:39.873122"], ["updated_at", "2024-08-21 10:50:39.873122"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (2.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "HHHH-77"], ["created_at", "2024-08-21 10:50:39.879135"], ["updated_at", "2024-08-21 10:50:39.879135"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (3.6ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4539"], ["longitude", "-70.6039"], ["sent_at", nil], ["created_at", "2024-08-21 10:50:39.890651"], ["updated_at", "2024-08-21 10:50:39.890651"], ["vehicles_id", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.3ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4350"], ["longitude", "-70.6158"], ["sent_at", "2024-01-01 00:10:00"], ["created_at", "2024-08-21 10:50:39.898357"], ["updated_at", "2024-08-21 10:50:39.898357"], ["vehicles_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.3ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-34.1619"], ["longitude", "-70.7408"], ["sent_at", "2024-01-01 00:20:00"], ["created_at", "2024-08-21 10:50:39.904688"], ["updated_at", "2024-08-21 10:50:39.904688"], ["vehicles_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4372"], ["longitude", "-70.6572"], ["sent_at", "2024-01-01 00:30:00"], ["created_at", "2024-08-21 10:50:39.910627"], ["updated_at", "2024-08-21 10:50:39.910627"], ["vehicles_id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.3ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.5000"], ["longitude", "-70.7167"], ["sent_at", "2024-01-01 00:40:00"], ["created_at", "2024-08-21 10:50:39.916555"], ["updated_at", "2024-08-21 10:50:39.916555"], ["vehicles_id", 4]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.3ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4219"], ["longitude", "-70.7350"], ["sent_at", "2024-01-01 00:50:00"], ["created_at", "2024-08-21 10:50:39.931058"], ["updated_at", "2024-08-21 10:50:39.931058"], ["vehicles_id", 5]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.5669"], ["longitude", "-70.6750"], ["sent_at", "2024-01-01 01:00:00"], ["created_at", "2024-08-21 10:50:39.937130"], ["updated_at", "2024-08-21 10:50:39.937130"], ["vehicles_id", 5]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.4ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4589"], ["longitude", "-70.6989"], ["sent_at", "2024-01-01 03:00:00"], ["created_at", "2024-08-21 10:50:39.943568"], ["updated_at", "2024-08-21 10:50:39.943568"], ["vehicles_id", 6]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.3678"], ["longitude", "-70.6339"], ["sent_at", "2024-01-01 04:00:00"], ["created_at", "2024-08-21 10:50:39.949758"], ["updated_at", "2024-08-21 10:50:39.949758"], ["vehicles_id", 6]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.5289"], ["longitude", "-70.6628"], ["sent_at", "2024-01-01 05:00:00"], ["created_at", "2024-08-21 10:50:39.955548"], ["updated_at", "2024-08-21 10:50:39.955548"], ["vehicles_id", 7]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.1ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.5250"], ["longitude", "-70.5378"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:39.961821"], ["updated_at", "2024-08-21 10:50:39.961821"], ["vehicles_id", 7]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.4ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.5833"], ["longitude", "-70.5833"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:39.967514"], ["updated_at", "2024-08-21 10:50:39.967514"], ["vehicles_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.5828"], ["longitude", "-70.6339"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:39.973464"], ["updated_at", "2024-08-21 10:50:39.973464"], ["vehicles_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.3ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4428"], ["longitude", "-70.5319"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:39.979251"], ["updated_at", "2024-08-21 10:50:39.979251"], ["vehicles_id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4167"], ["longitude", "-70.5833"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:39.985493"], ["updated_at", "2024-08-21 10:50:39.985493"], ["vehicles_id", 4]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.3500"], ["longitude", "-70.5167"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:39.991524"], ["updated_at", "2024-08-21 10:50:39.991524"], ["vehicles_id", 5]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.5219"], ["longitude", "-70.6869"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:39.997644"], ["updated_at", "2024-08-21 10:50:39.997644"], ["vehicles_id", 6]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.4ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4450"], ["longitude", "-70.7258"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.009395"], ["updated_at", "2024-08-21 10:50:40.009395"], ["vehicles_id", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4869"], ["longitude", "-70.6039"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.015812"], ["updated_at", "2024-08-21 10:50:40.015812"], ["vehicles_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.4ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.5167"], ["longitude", "-70.7667"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.021626"], ["updated_at", "2024-08-21 10:50:40.021626"], ["vehicles_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.1ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4539"], ["longitude", "-70.6039"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.028355"], ["updated_at", "2024-08-21 10:50:40.028355"], ["vehicles_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4661"], ["longitude", "-70.6336"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.034047"], ["updated_at", "2024-08-21 10:50:40.034047"], ["vehicles_id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.7ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4861"], ["longitude", "-70.5333"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.039908"], ["updated_at", "2024-08-21 10:50:40.039908"], ["vehicles_id", 4]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4333"], ["longitude", "-70.7167"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.046160"], ["updated_at", "2024-08-21 10:50:40.046160"], ["vehicles_id", 5]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.1ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.3608"], ["longitude", "-70.7289"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.051816"], ["updated_at", "2024-08-21 10:50:40.051816"], ["vehicles_id", 6]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4269"], ["longitude", "-70.6989"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.057648"], ["updated_at", "2024-08-21 10:50:40.057648"], ["vehicles_id", 6]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.4058"], ["longitude", "-70.6400"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.063439"], ["updated_at", "2024-08-21 10:50:40.063439"], ["vehicles_id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mWaypoint Create (2.3ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "-33.3978"], ["longitude", "-70.7228"], ["sent_at", "2024-01-01 00:00:00"], ["created_at", "2024-08-21 10:50:40.069290"], ["updated_at", "2024-08-21 10:50:40.069290"], ["vehicles_id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+[dotenv] Set [36mDB_HOST[0m, [36mDB_NAME[0m, [36mDB_PASSWORD[0m, [36mDB_PORT[0m, [36mDB_USERNAME[0m, [36mMAX_WAYPOINTS_COUNT[0m, and [36mREDIS_HOST_SERVER[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:51:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (85.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (1.6ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 4], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 5], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 6], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 7], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 8], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 199ms (Views: 45.7ms | ActiveRecord: 118.7ms (9 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:51:37 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 4], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 5], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 6], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 7], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 8], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 1.4ms (9 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:51:40 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 4], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 5], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 6], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 7], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 8], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 24ms (Views: 18.5ms | ActiveRecord: 1.5ms (9 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle" for ::1 at 2024-08-21 06:51:40 -0400
+Processing by Api::V1::VehicleController#index as */*
+5
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 2], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 3], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 4], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 5], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 6], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 7], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints"."id", "waypoints"."latitude", "waypoints"."longitude", "waypoints"."sent_at" FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 ORDER BY "waypoints"."sent_at" DESC LIMIT $2[0m  [["vehicles_id", 8], ["LIMIT", 5]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:18:in `index'
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 2.0ms (9 queries, 0 cached) | GC: 0.2ms)
+
+
