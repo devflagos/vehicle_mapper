@@ -1,0 +1,894 @@
+  [1m[35m (170.2ms)[0m  [1m[35mCREATE DATABASE "vehicle_mapper_development" ENCODING = 'unicode'[0m
+  [1m[35m (108.1ms)[0m  [1m[35mCREATE DATABASE "vehicle_mapper" ENCODING = 'unicode'[0m
+  [1m[35m (80.1ms)[0m  [1m[35mCREATE DATABASE "vehicle_mapper" ENCODING = 'unicode'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5009937961787321115)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateVehicles (20240818152813)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.0ms)[0m  [1m[35mCREATE TABLE "vehicles" ("id" bigserial primary key, "plate" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_vehicles_on_plate" ON "vehicles" ("plate")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240818152813') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateWaypoints (20240818152825)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "waypoints" ("id" bigserial primary key, "latitude" character varying, "longitude" character varying, "sent_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "vehicles_id" bigint, CONSTRAINT "fk_rails_1968037f30"
+FOREIGN KEY ("vehicles_id")
+  REFERENCES "vehicles" ("id")
+)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE INDEX "index_waypoints_on_vehicles_id" ON "waypoints" ("vehicles_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240818152825') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5009937961787321115)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 16:38:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant WaypointsController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant WaypointsController)
+NameError (uninitialized constant WaypointsController)
+  
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 16:40:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant WaypointsController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant WaypointsController)
+NameError (uninitialized constant WaypointsController)
+  
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 16:43:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant V1):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant V1)
+NameError (uninitialized constant V1)
+  
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 16:44:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::V1::WaypointsController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant Api::V1::WaypointsController)
+NameError (uninitialized constant Api::V1::WaypointsController)
+  
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 16:51:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant V1::WaypointsController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant V1::WaypointsController)
+NameError (uninitialized constant V1::WaypointsController)
+  
+Started GET "/v1/vehicles" for 127.0.0.1 at 2024-08-18 16:52:23 -0400
+  
+ActionController::RoutingError (uninitialized constant V1::VehiclesController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant V1::VehiclesController)
+NameError (uninitialized constant V1::VehiclesController)
+  
+Started GET "/v1/vehicles" for 127.0.0.1 at 2024-08-18 17:11:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/v1/vehicles"):
+  
+Started GET "/api/v1/vehicles" for 127.0.0.1 at 2024-08-18 17:11:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/vehicles"):
+  
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:12:31 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 69.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `vehicle_identifier' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:10:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:14:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 179.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `vehicle_identifier' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:12:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:17:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 72.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `vehicle_identifier' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:11:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:19:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 80.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `vehicle_identifier' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:11:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:19:50 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.5ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `vehicle_identifier' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:11:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:24:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 71.6ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `vehicle_identifier' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:11:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:28:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 94.6ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `vehicle_identifier' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:11:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:31:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 83.6ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/v1/waypoint_controller.rb:46:in `check_vehicle'
+app/controllers/api/v1/waypoint_controller.rb:10:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:33:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mWaypoint Load (1.4ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+Completed 404 Not Found in 129ms (ActiveRecord: 96.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Waypoint with 'id'={:plate=>"HA-3452"}):
+  
+app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+app/controllers/api/v1/waypoint_controller.rb:10:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:33:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (1.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+Completed 404 Not Found in 33ms (ActiveRecord: 193.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'={:plate=>"HA-3452"}):
+  
+app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+app/controllers/api/v1/waypoint_controller.rb:10:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:35:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 74.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `latitude' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:12:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:49:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (2.6ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1[0m  [["plate", "HA-3452"]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:48:in `puts'
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 95.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `latitude' for an instance of ActionController::Parameters):
+  
+app/controllers/api/v1/waypoint_controller.rb:12:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:50:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (2.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1[0m  [["plate", "HA-3452"]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:48:in `puts'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 84.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for an instance of ActiveRecord::Relation):
+  
+app/controllers/api/v1/waypoint_controller.rb:14:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:58:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 70.6ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for an instance of ActiveRecord::Relation):
+  
+app/controllers/api/v1/waypoint_controller.rb:49:in `check_vehicle'
+app/controllers/api/v1/waypoint_controller.rb:10:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 17:59:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (1.0ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1[0m  [["plate", "HA-3452"]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:11:in `puts'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 70.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/api/v1/waypoint_controller.rb:15:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:15:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (1.8ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1[0m  [["plate", "HA-3452"]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:11:in `puts'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 96.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/api/v1/waypoint_controller.rb:15:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:18:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (1.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1[0m  [["plate", "HA-3452"]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 85.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/api/v1/waypoint_controller.rb:14:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:24:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (1.6ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1[0m  [["plate", "HA-3452"]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 96.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/api/v1/waypoint_controller.rb:14:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:30:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 74.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory - %${vehicle}%):
+  
+app/controllers/api/v1/waypoint_controller.rb:47:in ``'
+app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+app/controllers/api/v1/waypoint_controller.rb:10:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:33:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (2.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 90.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `first' for nil):
+  
+app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+app/controllers/api/v1/waypoint_controller.rb:10:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:33:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (1.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 103.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument, String passed.):
+  
+app/controllers/api/v1/waypoint_controller.rb:51:in `check_vehicle'
+app/controllers/api/v1/waypoint_controller.rb:10:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:33:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (1.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:52:in `check_vehicle'
+  [1m[36mVehicle Create (3.7ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["plate", "HA-3452"], ["created_at", "2024-08-18 22:33:48.162299"], ["updated_at", "2024-08-18 22:33:48.162299"]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:52:in `check_vehicle'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:52:in `check_vehicle'
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 100.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for nil):
+  
+app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:34:16 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.9ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for nil):
+  
+app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:34:32 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for nil):
+  
+app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:35:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.23, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (1.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (7.4ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "20.23"], ["longitude", "-0.56"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-18 22:35:00.648310"], ["updated_at", "2024-08-18 22:35:00.648310"], ["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 52ms (Views: 0.3ms | ActiveRecord: 95.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/v1/gps" for 127.0.0.1 at 2024-08-18 18:35:17 -0400
+Processing by Api::V1::WaypointController#create as */*
+  Parameters: {"latitude"=>20.4, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00", "vehicle_identifier"=>"HA-3452", "waypoint"=>{"latitude"=>20.4, "longitude"=>-0.56, "sent_at"=>"2016-06-02 20:45:00"}}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:47:in `check_vehicle'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mWaypoint Create (2.2ms)[0m  [1m[32mINSERT INTO "waypoints" ("latitude", "longitude", "sent_at", "created_at", "updated_at", "vehicles_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", "20.4"], ["longitude", "-0.56"], ["sent_at", "2016-06-02 20:45:00"], ["created_at", "2024-08-18 22:35:17.912455"], ["updated_at", "2024-08-18 22:35:17.912455"], ["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/waypoint_controller.rb:18:in `create'
+Completed 201 Created in 10ms (Views: 0.1ms | ActiveRecord: 2.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicles" for 127.0.0.1 at 2024-08-18 18:36:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/vehicles"):
+  
+Started GET "/api/v1/vehicle" for 127.0.0.1 at 2024-08-18 18:36:31 -0400
+Processing by Api::V1::VehicleController#index as */*
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/controllers/api/v1/vehicle_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/waypoint" for 127.0.0.1 at 2024-08-18 18:36:49 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"waypoint"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'=waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:37:15 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:39:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (1.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 404 Not Found in 139ms (ActiveRecord: 95.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Waypoint with 'id'={:vehicles_id=>1}):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:41:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (1.1ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 127ms (Views: 1.2ms | ActiveRecord: 88.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:43:04 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 3.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `findAll' for class Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:46:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (1.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 86.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `call' for class Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:46:14 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `call' for class Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:46:17 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `call' for class Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:47:07 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (Unsupported argument type: 1 (Integer)):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:47:22 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (Unsupported argument type: 1 (Integer)):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:47:47 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (1.4ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 7.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (private method `select' called for an instance of Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:47:58 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 7.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `all' for an instance of Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:48:05 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `all' for an instance of Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:48:10 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.3ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 27ms (Views: 1.9ms | ActiveRecord: 6.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:48:39 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 404 Not Found in 17ms (ActiveRecord: 4.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Waypoint with 'id'={:vehicles_id=>1}):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:49:04 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 4.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:50:16 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_all' for class Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:52:12 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 404 Not Found in 9ms (Views: 0.1ms | ActiveRecord: 2.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:52:17 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:52:35 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 404 Not Found in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:52:50 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:53:08 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `[]'
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:53:18 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 3.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `[]'
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:54:39 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `[]'
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:54:53 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 17ms (Views: 0.8ms | ActiveRecord: 4.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:57:59 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 6.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:58:02 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:58:17 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 22ms (Views: 0.9ms | ActiveRecord: 5.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:58:51 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 5.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `All' for an instance of Waypoint):
+  
+app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:59:08 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 4.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:59:19 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 5.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:59:33 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.1ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.1ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 4.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 18:59:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (2.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1 LIMIT $2[0m  [["vehicles_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:21:in `show'
+Completed 200 OK in 121ms (Views: 0.9ms | ActiveRecord: 80.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 19:00:29 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.8ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:23:in `show'
+Completed 200 OK in 22ms (Views: 5.4ms | ActiveRecord: 6.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2024-08-18 19:00:36 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:23:in `show'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/vehicle/2" for 127.0.0.1 at 2024-08-18 19:00:42 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'=2):
+  
+app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Started GET "/api/v1/vehicle/2" for 127.0.0.1 at 2024-08-18 19:01:24 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'=2):
+  
+app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Started GET "/api/v1/vehicle/HA-3452" for 127.0.0.1 at 2024-08-18 19:02:18 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"HA-3452"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'=HA-3452):
+  
+app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Started GET "/api/v1/vehicle/HA-3452" for 127.0.0.1 at 2024-08-18 19:02:41 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"HA-3452"}
+Completed 404 Not Found in 6ms (ActiveRecord: 2.1ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle without an ID):
+  
+app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Started GET "/api/v1/vehicle/HA-3452" for 127.0.0.1 at 2024-08-18 19:02:55 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"HA-3452"}
+  [1m[36mVehicle Load (7.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE (HA-3452) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 7.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "ha" does not exist
+LINE 1: SELECT "vehicles".* FROM "vehicles" WHERE (HA-3452) LIMIT $1
+                                                   ^
+):
+
+Causes:
+PG::UndefinedColumn (ERROR:  column "ha" does not exist
+LINE 1: SELECT "vehicles".* FROM "vehicles" WHERE (HA-3452) LIMIT $1
+                                                   ^
+)
+  
+Started GET "/api/v1/vehicle/HA-3452" for 127.0.0.1 at 2024-08-18 19:03:07 -0400
+Processing by Api::V1::VehicleController#show as */*
+  Parameters: {"id"=>"HA-3452"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" WHERE "vehicles"."plate" = $1 LIMIT $2[0m  [["plate", "HA-3452"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:19:in `show'
+  [1m[36mWaypoint Load (0.2ms)[0m  [1m[34mSELECT "waypoints".* FROM "waypoints" WHERE "waypoints"."vehicles_id" = $1[0m  [["vehicles_id", 1]]
+  ↳ app/controllers/api/v1/vehicle_controller.rb:23:in `show'
+Completed 200 OK in 17ms (Views: 4.0ms | ActiveRecord: 4.1ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
